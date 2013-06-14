@@ -1,0 +1,15 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
+
+2013-06-14 07:03:11 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: application/classes/Controller/hello ~ SYSPATH/classes/kohana/request.php [ 760 ]
+2013-06-14 07:03:14 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL application/classes/Controller was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 94 ]
+2013-06-14 07:23:18 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL f/s/t was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 94 ]
+2013-06-14 07:24:39 --- ERROR: ErrorException [ 1 ]: Class 'Model_Tiwari' not found ~ APPPATH/classes/controller/tcontroller.php [ 17 ]
+2013-06-14 07:25:16 --- ERROR: ErrorException [ 1 ]: Class 'Model_Tmodel' not found ~ APPPATH/classes/controller/tcontroller.php [ 17 ]
+2013-06-14 07:25:17 --- ERROR: ErrorException [ 1 ]: Class 'Model_Tmodel' not found ~ APPPATH/classes/controller/tcontroller.php [ 17 ]
+2013-06-14 07:26:51 --- ERROR: ErrorException [ 1 ]: Class 'Tmodel' not found ~ APPPATH/classes/controller/tcontroller.php [ 17 ]
+2013-06-14 07:29:09 --- ERROR: ErrorException [ 1 ]: Class 'Model_Tmodel' not found ~ APPPATH/classes/controller/tcontroller.php [ 17 ]
+2013-06-14 07:33:29 --- ERROR: ErrorException [ 8 ]: Undefined index: blah_var ~ APPPATH/classes/model/tmodel.php [ 14 ]
+2013-06-14 07:34:34 --- ERROR: Database_Exception [ 1044 ]: Access denied for user ''@'localhost' to database 'kohana' ~ MODPATH/database/classes/kohana/database/mysql.php [ 95 ]
+2013-06-14 07:54:43 --- ERROR: ErrorException [ 8 ]: Undefined index: blah_var ~ APPPATH/classes/model/tmodel.php [ 14 ]
+2013-06-14 08:00:17 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected ' ~ APPPATH/classes/model/tmodel.php [ 17 ]
+2013-06-14 08:00:21 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected ' ~ APPPATH/classes/model/tmodel.php [ 17 ]
