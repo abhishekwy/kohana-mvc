@@ -9,7 +9,7 @@ Class Model_Tmodel extends Model {
                     values
                       (:blah_var, :blah_int) ;";
 
-        DB::query(Database::INSERT, $query)
+        $ret = DB::query(Database::INSERT, $query)
                 ->param(':blah_var', $fuck['blah_var'])
                 ->param(':blah_int', $fuck['blah_int'])
                 ->execute();
