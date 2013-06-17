@@ -18,7 +18,33 @@ return array
 			 * Ports and sockets may be appended to the hostname.
 			 */
 			'hostname'   => 'localhost',
-			'database'   => 'kohana',
+			'database'   => 'first',
+			'username'   => 'root',
+			'password'   => 'webyog',
+			'persistent' => FALSE,
+		),
+		'table_prefix' => '',
+		'charset'      => 'utf8',
+		'caching'      => FALSE,
+		'profiling'    => TRUE,
+	),
+        'another_server' => array
+	(
+		'type'       => 'mysql',
+		'connection' => array(
+			/**
+			 * The following options are available for MySQL:
+			 *
+			 * string   hostname     server hostname, or socket
+			 * string   database     database name
+			 * string   username     database username
+			 * string   password     database password
+			 * boolean  persistent   use persistent connections?
+			 *
+			 * Ports and sockets may be appended to the hostname.
+			 */
+			'hostname'   => '127.0.0.1',
+			'database'   => 'second',
 			'username'   => 'root',
 			'password'   => 'webyog',
 			'persistent' => FALSE,
@@ -54,4 +80,31 @@ return array
 		'caching'      => FALSE,
 		'profiling'    => TRUE,
 	),
+        'last' => array
+	(
+		'type'       => 'mysql',
+		'connection' => array(
+			/**
+			 * The following options are available for MySQL:
+			 *
+			 * string   hostname     server hostname, or socket
+			 * string   database     database name
+			 * string   username     database username
+			 * string   password     database password
+			 * boolean  persistent   use persistent connections?
+			 *
+			 * Ports and sockets may be appended to the hostname.
+			 */
+			'hostname'   => '127.0.0.1',
+			'database'   => 'second',
+			'username'   => 'root',
+			'password'   => 'webyog',
+			'persistent' => FALSE,
+		),
+		'table_prefix' => '',
+		'charset'      => 'utf8',
+		'caching'      => FALSE,
+		'profiling'    => TRUE,
+	),
+	
 );
