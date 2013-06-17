@@ -11,8 +11,6 @@ class Controller_Tcontroller extends Controller {
     {
         $mdl = new Model_Tmodel;
         $res = $mdl->schema_dump($_GET);
-        
-        
         $this->response->body($res);
     }
 
