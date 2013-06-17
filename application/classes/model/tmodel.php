@@ -39,35 +39,4 @@ Class Model_Tmodel extends Model {
         echo "</pre>";
     }
     
-    public function phpcli($input_get){
-        echo "<pre>";
-
-        for($j=0; $j < $n_tables; $j++){
-                $tablename = $r_tables[$j]["Tables_in_mysql"];
-                //echo "$db_to_ignore.$tablename\n";
-                $db_tb = $db_to_ignore.".".$tablename;
-                echo $db_tb."\n";
-                $ignore=$header.$db_tb;
-                //echo $ignore."\n";
-                $aggregated_ignore=$aggregated_ignore.$ignore." ";
-        }
-       //echo $aggregated_ignore;
-        /*
-         * Created an ignore list for all tables in database: 'mysql'
-         * Append $aggregated_ignore to do this.
-         */
-        
-        $shell_program="mysqldump";
-        $username="root";
-        $password="webyog";
-        $append=" --ignore-table mysql.`slow_log`";
-        
-        //$run = "$shell_program -u $username -d --add-drop-table --all-databases -p$password ";
-        $run = "$shell_program -u $username -d --add-drop-table --all-databases -p$password ".$aggregated_ignore;
-        //echo "/* QUERY= ".$run." */\n";
-        $output = shell_exec($run);
-        echo $output;
-        
-        echo "</pre>";
-        }
 }
