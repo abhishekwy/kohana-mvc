@@ -1,24 +1,18 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of tiwari
+ * Controller of the sql-schema script
  *
- * @author shrinath
+ * @author shrinath, abhishek
  */
 class Controller_Tcontroller extends Controller {
 
     public function action_index()
     {
-        $mdl_tiwari = new Model_Tmodel;
-        $res        = $mdl_tiwari->do_tiwari_insert($_GET);
-
-        $mdl_tiwari->do_tiwari_select();
-
+        $mdl = new Model_Tmodel;
+        $res = $mdl->schema_dump($_GET);
+        
+        
         $this->response->body($res);
     }
 
